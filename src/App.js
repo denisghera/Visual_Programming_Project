@@ -4,18 +4,20 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from "./components/Home";
 import RealEstate from "./components/RealEstate";
 import Contact from "./components/Contact";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <>
-      <Router>
+    <Router>
+      <Layout>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/realestate' element={<RealEstate/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/realestate' element={<RealEstate />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
-      </Router>
-    </>
+      </Layout>
+    </Router>
   );
 }
+
 export default App;

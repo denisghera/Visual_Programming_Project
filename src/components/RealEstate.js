@@ -1,9 +1,12 @@
 import React from "react";
+import "../App.css";
+import Footer from "./Footer";
 
 function RealEstate() {
   return (
     <div>
-      <h1>RealEstate</h1>
+        <center><h1>Real Estate</h1></center>
+        <Footer/>
     </div>
   );
 }
