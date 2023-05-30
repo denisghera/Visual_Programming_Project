@@ -1,12 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from "./components/Home";
+import RealEstate from "./components/RealEstate";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/realestate' element={<RealEstate/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </Router>
+    </>
+  );
 }
-
 export default App;
