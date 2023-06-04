@@ -87,8 +87,15 @@ h1 {
   transform: translate(0, 5%);
 }
 
+.logo-link {
+  display: inline-block;
+}
+
 .logo {
-  width: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 9vw;
+  margin-left: 2vw;
 }
 
 .content {
@@ -106,10 +113,12 @@ footer {
 
 .featured-house {
   width: 30vw;
+  height: 20vw;
   margin: 1vw;
   border-radius: 10px;
   outline: 2px solid #979797;
   transition: 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .featured-house:hover {
@@ -121,12 +130,13 @@ footer {
 @media (max-width: 600px) {
   .featured-house {
     width: 85vw;
+    height: 50vw;
     margin: 3vw;
   }
 
   .logo {
-    width: 100%;
-    margin-left: 30%;
+    width: 70%;
+    margin-left: 10%;
   }
 
   footer {

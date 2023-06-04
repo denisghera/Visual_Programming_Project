@@ -32,10 +32,10 @@ function Home() {
             <img src="hosue1.jpg" alt="banana" class="featured-house" />
           </div>
           <div class="w-full sm:w-1/2 md:w-1/3">
-            <img src="hosue1.jpg" alt="banana" class="featured-house" />
+            <img src="house2.jpg" alt="banana" class="featured-house" />
           </div>
           <div class="w-full sm:w-1/2 md:w-1/3">
-            <img src="hosue1.jpg" alt="banana" class="featured-house" />
+            <img src="house3.jpg" alt="banana" class="featured-house" />
           </div>
         </div>
         <h2 className="text-3xl text-center font-semibold mb-8">
@@ -76,7 +76,7 @@ function Home() {
         <h2 className="text-3xl text-center font-semibold mb-8">
           What our customers are saying
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" style={{margin:'3vh'}}>
           <div className="bg-gray-800 rounded-lg shadow-md p-6">
             <blockquote className="text-gray-300 mb-4">
               "Haunted Homes Realty made it easy for me to find my dream haunted house. Their knowledge of the supernatural history and their dedication to finding the perfect spectral match for their clients is unparalleled."
@@ -107,7 +107,7 @@ function Home() {
               Explore Haunted Homes
             </Link>
           </div>
-      <div style={{marginBottom:'15vh'}}></div>
+      <div style={{marginBottom:'18vh'}}></div>
       </center>
       <Footer />
     </div>

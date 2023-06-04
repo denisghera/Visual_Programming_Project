@@ -5,8 +5,8 @@ import "../App.css";
 function Header() {
   return (
     <div className="header flex items-center justify-between px-4 py-3">
-      <Link to="/">
-        <img src="logo192.png" className="logo block mx-auto" alt="banana" />
+      <Link to="/" className="logo-link">
+        <img src="logo_hhr.png" className="logo block mx-auto w-auto" alt="banana" />
       </Link>
       <div className="mt-3 flex flex-wrap justify-end">
         <div className="mb-4 mr-5">
