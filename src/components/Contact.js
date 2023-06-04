@@ -5,8 +5,11 @@ import Footer from "./Footer";
 function Contact() {
   return (
     <div>
-        <center><h1>Contact</h1></center>
-        <Footer/>
+      <center>
+        <h1>This is our team:</h1>
+        <p>really clumsy ghosts</p>
+      </center>
+      <Footer/>
     </div>
   );
 }
