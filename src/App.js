@@ -6,7 +6,7 @@ import RealEstate from "./components/RealEstate";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
 
-function App() {
+function App() {  
   return (
     <Router>
       <Layout>
