@@ -125,7 +125,17 @@ footer {
   transform: scale(1.05);
 }
 
+.address {
+  border-radius: 10px;
+  outline: 2px solid #979797;
+  margin: 2vh;
+  background-color: rgb(24, 24, 62);
+  transition: 0.3s ease-in-out;
+}
 
+.address:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 600px) {
   .featured-house {

@@ -127,6 +127,73 @@ app.get("/testimonials", (req, res) => {
   res.json(testimonials);
 });
 
+app.get("/realtors", (req,res) => {
+  const realtors = [
+    {
+      name: "Ghostly Agent Denis",
+      description: "The Home Designer\nWith an impeccable eye for haunted aesthetics and an extensive knowledge of ghostly interior design, you can trust Ghostly Agent Denis to transform any haunted house into a captivating masterpiece that will leave both the living and the spirits in awe.",
+      image: "ghost1.png"
+    },
+    {
+      name: "Ghostly Agent Malina",
+      description: "The Haunted Home Realtor\nWith years of experience in the housing market, Ghostly Agent Malina is the go-to professional when it comes to traditional real estate expertise, matching individuals with their perfect haunted homes.",
+      image: "ghost2.png"
+    },
+    {
+      name: "Ghostly Agent Mark",
+      description: "The Paranormal Enthusiast\nWith an extraordinary ability to create communication between the living and the spirit world, Ghostly Agent Mark is our resident paranormal expert, armed with the unique talent to engage with ghosts and spirits on a profound level. Trust in their expertise to unravel the mysteries of the paranormal realm.",
+      image: "ghost3.png"
+    }
+  ];
+
+  res.json(realtors);
+});
+
+app.get("/contact", (req,res) => {
+  const contact = [
+    {
+      name: "Ghostly Agent Denis",
+      email: "denis@spookyrealestate.com",
+      phone: "555-123-4567"
+    },
+    {
+      name: "Ghostly Agent Malina",
+      email: "malina@spookyrealestate.com",
+      phone: "555-987-6543"
+    },
+    {
+      name: "Ghostly Agent Mark",
+      email: "mark@spookyrealestate.com",
+      phone: "555-456-7890"
+    }
+  ];
+
+  res.json(contact);
+});
+
+app.get("/faq", (req, res) => {
+  const faq = [
+    {
+      question: "How do I schedule a haunted house viewing?",
+      answer: "To schedule a haunted house viewing, simply contact one of our ghostly agents through email or telephone. They will be happy to assist you."
+    },
+    {
+      question: "Are your haunted houses safe to live in?",
+      answer: "Absolutely! Our ghostly agents ensure that all haunted houses meet the highest standards of supernatural safety. We thoroughly inspect each property to ensure it is suitable for both the living and the spirits."
+    },
+    {
+      question: "Can I customize the haunting level of a house?",
+      answer: "While you can't customize the haunting level directly, our ghostly agents can help you find a house that matches your desired level of spookiness, whether you prefer a mild haunting or a spine-chilling experience."
+    },
+    {
+      question: "Are your haunted houses available for rent or purchase?",
+      answer: "Our haunted houses are available for both rent and purchase. Whether you're looking for a temporary spooky experience or a long-term haunted home, we have options to suit your needs."
+    }
+  ];
+
+  res.json(faq);
+});
+
 app.listen(8000, () => {
   console.log(`Server is running on port 8000.`);
 });

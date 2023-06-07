@@ -31,38 +31,38 @@ function RealEstateList() {
         <h1 className="text-3xl text-center font-semibold mb-8">
           Explore Haunted Homes
         </h1>
-        <div className="container mx-auto">
           <p
             className="text-gray-300 text-center"
-            style={{ margin: "2vw", fontSize: "20px" }}
+            style={{ margin: "2vw", fontSize: "20px" , marginBottom: '2vh'}}
           >
             Here, you can find all the haunted homes you've ever dreamed of. Get
             ready to immerse yourself in a world of supernatural wonders and
             unearthly delights. Welcome to Haunted Homes Realty, where spectral
             dreams become a thrilling reality.
           </p>
-        </div>
-        {listings.slice(0, visibleListings).map((listing) => (
-          <div key={listing.id} className="flex flex-wrap items-center mb-8">
-            <div className="w-full md:w-1/2">
-              <img
-                src={listing.image}
-                alt={listing.title}
-                className="featured-house"
-              />
+          {listings.slice(0, visibleListings).map((listing) => (
+            <div key={listing.id} className="flex flex-wrap items-center mb-8">
+              <div className="w-full md:w-1/2 px-10">
+                <img
+                  src={listing.image}
+                  alt={listing.title}
+                  className="featured-house"
+                  style={{width: '100%', height: 'auto', margin: '1vw', marginBottom: '3vh'}}
+                />
+              </div>
+              <div className="w-full md:w-1/2 px-8">
+                <h2 className="text-2xl font-semibold mb-4">{listing.title}</h2>
+                <p className="text-gray-300 mb-4">{listing.description}</p>
+                <Link
+                  to="/contact"
+                  className="inline-block px-6 py-3 bg-blue-800 text-white rounded-lg shadow-lg font-semibold hover:bg-blue-700"
+                >
+                  Buy Now {listing.price}
+                </Link>
+              </div>
             </div>
-            <div className="w-full md:w-2/5 px-4">
-              <h2 className="text-2xl font-semibold mb-4">{listing.title}</h2>
-              <p className="text-gray-300 mb-4">{listing.description}</p>
-              <Link
-                to="/contact"
-                className="inline-block px-6 py-3 bg-blue-800 text-white rounded-lg shadow-lg font-semibold hover:bg-blue-700"
-              >
-                Buy Now {listing.price}
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+
         {visibleListings < listings.length && (
           <button
             onClick={loadMoreListings}
@@ -73,7 +73,6 @@ function RealEstateList() {
         )}
       </center>
 
-      <div className="container mx-auto">
         <p
           className="text-gray-300 text-center"
           style={{ margin: "2vw", fontSize: "15px" }}
@@ -85,8 +84,6 @@ function RealEstateList() {
           property. Buyers should conduct their own research and due diligence
           to ensure the suitability of the property.
         </p>
-      </div>
-      <div className="container mx-auto">
         <p
           className="text-gray-300 text-center"
           style={{ margin: "2vw", fontSize: "15px" }}
@@ -95,7 +92,6 @@ function RealEstateList() {
           haunted properties. Prices and availability are subject to change
           without notice.
         </p>
-      </div>
       <div style={{ marginBottom: "18vh" }}></div>
       <Footer />
     </div>
