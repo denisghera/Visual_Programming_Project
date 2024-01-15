@@ -1,2 +1,1 @@
-# Visual_Programming_Project
-This is the repository for the second project in the visual programming class. It's a Node.js team project 
+At Haunted Homes Realty you find the best realtors in paranormal housing.
